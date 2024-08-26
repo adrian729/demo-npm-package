@@ -1,1 +1,1 @@
-export { add, hello } from './utils.js';
+export * from './utils';

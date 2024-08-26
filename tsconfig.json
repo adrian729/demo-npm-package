@@ -16,15 +16,19 @@
         "noImplicitOverride": true,
 
         /* If transpiling with TypeScript: */
-        "module": "NodeNext",
-        "outDir": "dist",
-        "rootDir": "src",
-        "sourceMap": true,
+        // "module": "NodeNext", -- changed when tsup
+        "module": "Preserve",
+        // "outDir": "dist", -- removed with tsup
+        // "rootDir": "src", -- removed with tsup
+        // "sourceMap": true, -- removed with tsup
 
         /* AND if you're building for a library: */
-        "declaration": true,
+        // "declaration": true,
 
         /* AND if you're building for a library in a monorepo: */
-        "declarationMap": true
+        // "declarationMap": true,
+
+        /* tsup - ts linting */
+        "noEmit": true
     }
 }
